@@ -1,0 +1,82 @@
+[options]
+   # layer
+    colorscheme = "NeoSolarized"
+    colorscheme_bg = "dark"
+    enable_guicolors = true
+    statusline_separator = "arrow"
+    statusline_iseparator = "arrow"
+    buffer_index_type = 4
+    enable_tabline_filetype_icon = true
+    enable_statusline_mode = false
+    # filetree
+    filetree_direction = "left"
+    enable_filetree_gitstatus = true
+    # code
+    default_indent = 4
+    expand_tab = true
+    bootstrap_before = "init_nvim#before"
+
+[[layers]]
+name = 'core'
+filetree_show_hidden = true
+enable_smooth_scrolling = true
+
+[[layers]]
+name = "colorscheme"
+
+[[layers]]
+name = "format"
+
+[[layers]]
+name = 'autocomplete'
+auto_completion_return_key_behavior = "complete"
+auto_completion_tab_key_behavior = "smart"
+
+[[layers]]
+name = "fzf"
+
+[[layers]]
+name = "git"
+
+[[layers]]
+name = "incsearch"
+
+[[layers]]
+name = 'shell'
+default_position = 'bottom'
+default_height = 30
+
+[[layers]]
+name = "tools"
+
+# enable language layers
+[[layers]]
+  name = "lang#c"
+  clang_executable = "/usr/bin/clang"
+  enable_clang_syntax_highlight = true
+  [layers.clang_std]
+    c = "c11"
+    cpp = "c++1z"
+    objc = "c11"
+    objcpp = "c++1z"
+
+[[layers]]
+  name = "lsp"
+  filetypes = [
+    "c",
+    "cpp"
+  ]
+  [layers.override_cmd]
+    c = ["clangd"]
+
+[[layers]]
+name = "lang#cmake"
+
+[[layers]]
+name = "lang#latex"
+
+[[layers]]
+name = "lang#lua"
+
+[[layers]]
+name = "lang#markdown"
