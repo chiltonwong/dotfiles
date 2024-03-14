@@ -1,0 +1,94 @@
+[apply]
+  whitespace = nowarn
+
+[color]
+  ui = true
+
+[color "branch"]
+  current = white bold
+  local   = yellow
+  remote  = cyan
+
+[color "diff"]
+  frag = cyan bold
+  meta = white
+  new = green bold
+  old = red bold
+  commit = yellow bold
+  whitespace = red reverse
+
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
+
+[color "status"]
+  untracked = cyan
+
+[commit]
+  template = ~/.gitmessage
+  gpgsign = true
+
+[core]
+  autocrlf     = input
+  excludesfile = ~/.gitignore_global
+  ignorecase   = false
+  safecrlf     = warn
+  abbrev       = 7
+  editor       = nvim
+
+[fetch]
+  prune = true
+
+[gitsh]
+  defaultCommand = status --short --branch
+
+[gitsh "color"]
+  default   = blue
+  modified  = red
+  untracked = cyan
+
+[include]
+  path = ~/.gitconfig.local
+
+[init]
+  defaultBranch = master
+
+[merge]
+  conflictstyle = diff3
+
+  # Always create local merge commits when merging.
+  ff = false
+
+[pull]
+  # Don't flatten locally created merge commits when rebasing.
+  rebase = merges
+
+[push]
+  # Refuse to push if upstream branch name is different from local.
+  default = simple
+
+[status]
+  submodulesummary = true
+
+[user]
+  email = your_email
+  name = your_name
+  signingkey = your_signingkey
+
+[http]
+  sslBackend = openssl
+
+# Enforce SSH
+[url "ssh://git@github.com/"]
+  insteadOf = https://github.com/
+
+[url "ssh://git@gitlab.com/"]
+  insteadOf = https://gitlab.com/
+
+[url "ssh://git@bitbucket.org/"]
+  insteadOf = https://bitbucket.org/
+
+[url "ssh://git@gitee.com/"]
+  insteadOf = https://gitee.com/

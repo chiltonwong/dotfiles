@@ -1,0 +1,97 @@
+# alias
+abbr "..."="../.."
+abbr "...."="../../.."
+abbr "....."="../../../.."
+abbr "......"="../../../../.."
+abbr "l"="ls -lah"
+abbr "la"="ls -lAh"
+abbr "ll"="ls -lh"
+abbr "ls"="ls -G"
+abbr "lsa"="ls -lah"
+abbr "md"="mkdir -p"
+abbr "rd"="rmdir"
+abbr "bc"="bc -l"
+abbr "c"="clear"
+abbr "h"="history"
+abbr "h1"="history 10"
+abbr "h2"="history 20"
+abbr "h3"="history 30"
+abbr "hgrep"='history | grep'
+abbr "pg"="ping google.com -c 5"
+abbr "pb"="ping baidu.com -c 5"
+abbr "ping"="ping -c 5"
+abbr "fastping"="ping -c 100 -s.2"
+abbr ":q"="exit"
+abbr "mv"='mv -i'
+abbr "cp"='cp -i'
+abbr "ln"='ln -i'
+abbr "rm"='rm -I'
+abbr "wget"="wget -c"
+abbr "fd"="find . -type d -name"
+abbr "ff"="find . -type f -name"
+abbr "rdf"="rsync -r /Users/$WHOAMI/Repo/dotfiles/dotfiles /Users/$WHOAMI/"
+
+abbr "NA"="&> /dev/null"
+abbr "NE"="2>|/dev/null"
+abbr "NO"=">|/dev/null"
+
+# brew
+abbr "bi"="brew install"
+abbr "bri"="brew reinstall"
+abbr "bui"="brew uninstall"
+abbr "bup"="brew update"
+abbr "bug"="brew upgrade"
+abbr "update"="brew update&brew upgrade"
+
+# system
+abbr "portstcp"='sudo netstat -tulanp tcp'
+abbr "portsudp"='sudo netstat -tulanp udp'
+abbr "psmem"="ps aux | sort -nr -k 4"
+abbr "psmem10"="ps aux | sort -nr -k 4 | head -10"
+abbr "pscpu"="ps aux | sort -nr -k 3"
+abbr "pscpu10"="ps aux | sort -nr -k 3 | head -10"
+abbr "disk_usage"='df -chl | grep total'
+abbr "dir_usage"='du -ch | grep total'
+abbr "paux"='ps aux | grep'
+abbr "dirmost"='du -hsx * | sort -rh | head -10'
+abbr "szsh"='source ~/.zshrc'
+abbr "ip"='ifconfig en0 | grep inet | grep -v inet6 | cut -f2'
+
+# git
+abbr "g"="git"
+abbr "gam"="git am"
+abbr "gcf"="git config --list"
+abbr "gcl"="git clone --recurse-submodules"
+abbr "gclean"="git clean --interactive -d"
+abbr "gcount"="git shortlog --summary --numbered"
+abbr "gcp"="git cherry-pick"
+abbr "ghelp"="git help"
+abbr "gignore"="git update-index --assume-unchanged"
+abbr "gignored"="git ls-files -v | grep \"^[[:lower:]]\""
+abbr "grf"="git reflog"
+abbr "ga"="git add"
+abbr "gaa"="git add --all"
+abbr "gcm"="git commit"
+abbr "gcma"="git commit --all"
+abbr "gck"="git checkout"
+abbr "gd"="git diff"
+abbr "gdt"="git diff-tree --no-commit-id --name-only -r"
+abbr "gf"="git fetch"
+abbr "gfa"="git fetch --all --prune --jobs=10"
+abbr "gpl"="git pull"
+abbr "gp"="git push"
+abbr "gb"="git branch"
+abbr "gls"="git log --stat"
+abbr "glg"="git log --graph"
+abbr "gm"="git merge"
+abbr "gmtl"="git mergetool --no-prompt"
+abbr "grmt"="git remote"
+abbr "grb"="git rebase"
+abbr "grv"="git revert"
+abbr "grs"="git reset"
+abbr "grm"="git rm"
+abbr "grst"="git restore"
+abbr "gsh"="git show"
+abbr "gst"="git status"
+abbr "gsw"="git switch"
+abbr "gwt"="git worktree"
