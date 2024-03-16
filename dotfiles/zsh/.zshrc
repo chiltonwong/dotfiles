@@ -42,3 +42,5 @@ export XDG_CONFIG_HOME="$HOME/.config"
 . "$XDG_CONFIG_HOME/zsh/plugin.zsh"
 . "$XDG_CONFIG_HOME/zsh/path.zsh"
 . "$XDG_CONFIG_HOME/zsh/compiler.zsh"
+
+rsync -r /Users/$WHOAMI/Repo/dotfiles/dotfiles /Users/$WHOAMI/

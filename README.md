@@ -22,14 +22,17 @@ especially when [coupled with version control
 systems](http://lists.gnu.org/archive/html/info-stow/2011-12/msg00000.html).
 
 ### How to install
-1. clone this repo to your `$HOME`
-2. make sure directory `dotfiles` is in your `$HOME`
-3. review all files in `dotfiles`, modify existing dotfiles and add your own dotfiles
-4. you may need to review and modify `script/install.sh:140`
+1. clone this repo to `~/Repo`
+2. review all files in `dotfiles`, modify existing dotfiles and add your own dotfiles`
+3. you may need to review and modify `script/install.sh:140`
+4. rsync `~/dotfiles` with `~/Repo/dotfiles/dotfiles`
 5. run `script/install.sh`
-```sh
-cd ~
-git clone https://github.com/chiltonwong/dotfiles.git .
+
+```bash
+mkdir -p ~/Repo & cd ~/Repo
+git clone https://github.com/chiltonwong/dotfiles.git
+rsync -r ~/Repo/dotfiles/dotfiles ~/
+cd ~/Repo/dotfiles
 # chmod -R +x script
 ./script/install.sh
 ```
