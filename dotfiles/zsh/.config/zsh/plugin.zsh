@@ -16,3 +16,6 @@ source ~/.oh-my-zsh/plugins/incr/incr*.zsh
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# perl
+eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"

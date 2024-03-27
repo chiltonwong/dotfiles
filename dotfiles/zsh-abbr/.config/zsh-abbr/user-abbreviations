@@ -30,6 +30,7 @@ abbr "rm"='rm -I'
 abbr "wget"="wget -c"
 abbr "fd"="find . -type d -name"
 abbr "ff"="find . -type f -name"
+abbr "rdf"="rsync -r /Users/$WHOAMI/Repo/dotfiles/dotfiles /Users/$WHOAMI/"
 
 abbr "NA"="&> /dev/null"
 abbr "NE"="2>|/dev/null"
