@@ -118,5 +118,19 @@
 
 [credential]
   helper = store
+
 [http]
   sslBackend = openssl
+
+# Enforce SSH
+[url "ssh://git@github.com/"]
+  insteadOf = https://github.com/
+
+[url "ssh://git@gitlab.com/"]
+  insteadOf = https://gitlab.com/
+
+[url "ssh://git@bitbucket.org/"]
+  insteadOf = https://bitbucket.org/
+
+[url "ssh://git@gitee.com/"]
+  insteadOf = https://gitee.com/
