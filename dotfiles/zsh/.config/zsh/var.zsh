@@ -6,6 +6,9 @@ export SDKROOT=$(xcrun --sdk macosx --show-sdk-path)
 # export http_proxy=http://127.0.0.1:7890
 # export all_proxy=socks5://127.0.0.1:7890
 
+# poetry
+export POETRY_PYPI_MIRROR_URL=https://mirrors.cloud.tencent.com/pypi/simple/
+
 # nvim
 export EDITOR="nvim"
 export GIT_EDITOR="nvim"
